@@ -7,10 +7,22 @@ abstract class HomeBlocEvent {}
 class HomeInitialEvent extends HomeBlocEvent{}
 
 class HomeProductWishlistButtonClickEvent extends HomeBlocEvent{
+  final ProductDataModel clickedProduct;
+
+  HomeProductWishlistButtonClickEvent({
+    required this.clickedProduct
+    });
+    
+
 
 }
 
 class HomeProductCartButtonClickEvent extends HomeBlocEvent{
+  final ProductDataModel clickedProduct;
+
+  HomeProductCartButtonClickEvent({
+    required this.clickedProduct
+    });
   
 }
 
